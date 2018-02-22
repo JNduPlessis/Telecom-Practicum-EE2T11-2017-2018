@@ -1,5 +1,5 @@
 %Room Channel Impulse Response
-%Rijk van Wijk & Nicolaas du Plessis
+%Author: Nicolaas du Plessis
 close all; clear; clc;
 
 %Due to the time limit, instead of making making a script that can
@@ -67,16 +67,16 @@ response = response(1:num_virt_source); %truncate padded zeros
 
 %Plots
 subplot(311)
-stem(n,x,'filled','LineStyle','-','LineWidth',0.8,'Color','black','Marker','^','MarkerSize',5);
+stem(n,x,'filled','LineStyle','-','LineWidth',0.8,'Color','black','MarkerSize',5);
 ylabel('H(t)','Fontsize',15); xlabel('Time (s)','Fontsize',15); grid on;
-title('Initial Impulse Response','Fontsize',15)
+title('Initial Impulse Response','Fontsize',15); axis([0 N 0 1.2]);
 
 subplot(312)
-stem(times_sorted,atten_sorted,'filled','LineStyle','-','LineWidth',0.8,'Color','black','Marker','^','MarkerSize',2);
+stem(times_sorted,atten_sorted,'filled','LineStyle','-','LineWidth',1.5,'Color','black','Marker','^','MarkerSize',2);
 ylabel('H(t)','Fontsize',15); xlabel('Time (s)','Fontsize',15); grid on;
-title('Recieved Signal At Targer','Fontsize',15)
+title('Recieved Signal At Targer','Fontsize',15);
 
 subplot(313)
-stem(times_sorted,response,'filled','LineStyle','-','LineWidth',0.8,'Color','black','Marker','^','MarkerSize',2);
+stem(times_sorted,response,'filled','LineStyle','-','LineWidth',1.5,'Color','black','Marker','^','MarkerSize',2);
 ylabel('H(t)','Fontsize',15); xlabel('Time (s)','Fontsize',15); grid on;
-title('Room Channel Impulse Response','Fontsize',15)
+title('Room Channel Impulse Response','Fontsize',15);

@@ -1,5 +1,5 @@
 %Time Frequency Plot
-%Rijk van Wijk & Nicolaas du Plessis
+%Author: Nicolaas du Plessis
 close all; clear; clc;
 
 load train
