@@ -1,0 +1,70 @@
+\documentclass[11pt, a4paper, oneside]{article}
+
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx} %Pretty documents
+\usepackage{grffile} %Allow multi-dots in image names (otherwise first dot seen as file extention)
+\graphicspath{{./tex_images/}}
+\usepackage{parskip} %No Indentation for Paragraphs
+\usepackage[hidelinks]{hyperref} %Clickable PDF's
+\usepackage{blindtext} %Use for text fillers and formatting
+\usepackage{float} %Allow H in figures to fix position
+\usepackage{siunitx} %Propper SI Units \SI{Value}{Units}
+\usepackage{caption} %Allows caption*() to remove prefix for equations in figures
+\usepackage{listings} %code
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{courier}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+\lstset{framextopmargin=50pt,frame=bottomline}
+
+\begin{document}
+	
+	\input{tex_sections/title.tex}
+		\section*{1: Convolution}
+	\input{tex_sections/report_1.tex}
+	\input{tex_sections/report_2.tex}
+		\section*{2: Fourier Transformation}
+	\input{tex_sections/report_3.tex}
+	\input{tex_sections/report_4.tex}
+	\input{tex_sections/report_5_6.tex}
+	\input{tex_sections/report_7.tex}
+	%\input{tex_sections/report_8.tex}
+
+	%\section*{3: Channel Estimation}
+	%\input{tex_sections/report_9.tex}
+	%\input{tex_sections/report_10.tex}
+	%\input{tex_sections/report_11.tex}
+	%\input{tex_sections/report_12.tex}
+
+	%\section*{4: Audio Channel Measurement}
+	%\input{tex_sections/report_13.tex}
+	%\input{tex_sections/report_14.tex}
+	%\input{tex_sections/report_15.tex}
+	%\input{tex_sections/report_16.tex}
+	%\input{tex_sections/report_17.tex}
+
+	%\section*{5: Filter Design}
+	%\input{tex_sections/report_18.tex}
+	%\input{tex_sections/report_19.tex}
+	%input{tex_sections/report_20.tex}
+	%\input{tex_sections/report_21.tex}
+	%\input{tex_sections/report_22.tex}
+	%\input{tex_sections/report_23.tex}
+	%\input{tex_sections/report_24.tex}
+
+	%\section*{6: Sampling}
+	%\input{tex_sections/report_25.tex}
+	%\input{tex_sections/report_26.tex}
+	%\input{tex_sections/report_27.tex}
+	%\input{tex_sections/report_28.tex}
+	%\input{tex_sections/report_29.tex}
+\newpage
+	\section*{Appendix: Matlab Scripts}
+	\input{tex_sections/appdix.tex}
+
+\end{document}
